@@ -1,0 +1,287 @@
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 87%;
+    margin: 0 auto;
+    margin-top: -15px;
+    margin-bottom: 140px;
+}
+
+.sneakersImg {
+    width: 280px;
+}
+
+.card {
+    margin-top: 24px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.card:hover {
+    transform: scale(1.13);
+}
+
+.card-info {
+    padding: 10px 10px 4px 12px;
+    margin-top: 2px;
+    background-color: white;
+}
+
+@media (max-width: 850px) and (min-width: 580px) {
+    #gallery {
+        margin-top: -45px;
+    }
+}
+
+@media (max-width: 580px) {
+    #gallery {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 720px) and (min-width: 620px) {
+    .sneakersImg {
+        width: 250px;
+    }
+}
+
+@media (max-width: 620px) and (min-width: 535px) {
+    .sneakersImg {
+        width: 230px;
+    }
+}
+
+@media (max-width: 535px) and (min-width: 480px) {
+    .sneakersImg {
+        width: 205px;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 460px) {
+    .sneakersImg {
+        width: 190px;
+    }
+}
+
+@media (max-width: 460px) and (min-width: 435px) {
+    .sneakersImg {
+        width: 180px;
+    }
+}
+
+@media (max-width: 435px) and (min-width: 415px) {
+    .sneakersImg {
+        width: 170px;
+    }
+}
+
+@media (max-width: 415px) and (min-width: 400px) {
+    .sneakersImg {
+        width: 160px;
+    }
+
+    .card-info h2 {
+        font-size: 15px;
+    }
+
+    .card-info h3 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) and (min-width: 370px) {
+    .sneakersImg {
+        width: 150px;
+    }
+
+    .card-info h2 {
+        font-size: 14px;
+    }
+
+    .card-info h3 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 370px) and (min-width: 330px) {
+    .sneakersImg {
+        width: 140px;
+    }
+
+    .card-info h2 {
+        font-size: 13px;
+    }
+
+    .card-info h3 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 330px) and (min-width: 220px) {
+    .sneakersImg {
+        width: 150px;
+    }
+
+    .card-info h2 {
+        font-size: 14px;
+    }
+
+    .card-info h3 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 220px) {
+    .sneakersImg {
+        width: 150px;
+    }
+
+    .card-info h2 {
+        font-size: 15px;
+    }
+
+    .card-info h3 {
+        font-size: 13px;
+    }
+}
+
+
+/* ------------------------------------------------------------- */
+/* ==========================| Modal |========================== */
+/* ------------------------------------------------------------- */
+
+.modalContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn-close {
+    position: relative;
+    top: 3px;
+    left: -5px;
+}
+
+.modalCard .card-img .sneakersImg {
+    width: 250px;
+}
+
+.hInfo {
+    margin: 15px 10px;
+    text-align: center;
+}
+
+.hInfo h2 {
+    font-size: 17px;
+}
+
+.hInfo h3 {
+    font-size: 15px;
+}
+
+.pInfo .pInfoList li {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 12px;
+    font-size: 14px;
+}
+
+.modal-footer .atc {
+    position: relative;
+    top: 1px;
+    left: -10px;
+    font-size: 15px;
+}
+
+.modalInfo1 .hInfo {
+    margin: 20px 20px;
+}
+
+.pCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    height: 50px;
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 12px;
+}
+
+.wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.wrapper span.num {
+    font-size: 16px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+@media (max-width: 600px) and (min-width: 330px) {
+    h5.modal-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 330px) and (min-width: 270px) {
+    .modal .modal-body .modalCard .sneakersImg {
+        width: 220px;
+    }
+
+    h5.modal-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 270px) and (min-width: 240px) {
+    .modal .modal-body .modalCard .sneakersImg {
+        width: 200px;
+    }
+
+    h5.modal-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 240px) and (min-width: 215px) {
+    .modal .modal-body .modalCard .sneakersImg {
+        width: 180px;
+    }
+
+    h5.modal-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 215px) and (min-width: 185px) {
+    .modal .modal-body .modalCard .sneakersImg {
+        width: 150px;
+    }
+
+    h5.modal-title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 185px) {
+    .modal .modal-body .modalCard .sneakersImg {
+        width: 130px;
+    }
+
+    h5.modal-title {
+        font-size: 16px;
+    }
+}
